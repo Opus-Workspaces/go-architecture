@@ -1,0 +1,46 @@
+{
+  "DEBUG": false,
+  "HTTP_SERVER": {
+    "address": "http://localhost",
+    "port": ":8081",
+    "timeout": 20,
+    "app_version": "1.0.0",
+    "read_timeout": 5,
+    "write_timeout": 5,
+    "ssl": true,
+    "default_timeout": 12,
+    "csrf": true
+  },
+  "JWT": {
+    "type_token": "Bearer",
+    "jwt_secret_key": "my secret key",
+    "expire_hour": 72
+  },
+  "DATABASE": {
+    "mongo": {
+      "host": "127.0.0.1",
+      "port": 27017,
+      "user": "",
+      "password": "",
+      "db_name": "local",
+      "timeout": 120
+    },
+    "redis": {
+      "host": "localhost",
+      "port": ":6379",
+      "password": "",
+      "db": 0,
+      "default_db": 0,
+      "min_idle_cons": 200,
+      "pool_size": 12000,
+      "pool_timeout": 240
+    }
+  },
+  "LOGGER": {
+    "folder": "logs_dev",
+    "max_size": 100,
+    "max_age": 2,
+    "max_backup": 1,
+    "compress": true
+  }
+}
